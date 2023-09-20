@@ -15,4 +15,20 @@ string readStr(){
     return text;
 }
 
+typedef struct{
+    int codigo,
+    celular,
+    cep,
+    CPF,
+    RG;
+    string bairro,
+    rua,
+    nome,
+    email,
+    estado;
+
+} cadastro;
+
+cadastro cliente;
+
 #endif

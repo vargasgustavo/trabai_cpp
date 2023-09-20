@@ -3,24 +3,7 @@
 
 using namespace std;
 
-typedef struct{
-    int codigo,
-    celular,
-    cep,
-    CPF,
-    RG;
-    string bairro,
-    rua,
-    nome,
-    email,
-    estado;
-
-} cadastro;
-
-cadastro cliente;
-
 void cadastrarCliente(){
-
     cout << endl << "#========== CADASTRO DE CLIENTES ==========#" << endl;
     
     cout << endl << "Digite o codigo ";
@@ -53,7 +36,6 @@ void cadastrarCliente(){
 
     cout << endl << "Digite seu estado ";
     cin >> cliente.estado;
-
 }
 
 void listarCliente(){
