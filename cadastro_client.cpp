@@ -23,18 +23,22 @@ void cadastrarCliente(){
     cin >> cliente.celular;
 
     cout << endl << "Digite seu email ";
+    cliente.email = readStr();
     cin >> cliente.email;
 
     cout << endl << "Digite seu cep ";
     cin >> cliente.cep;
 
     cout << endl << "Digite sua rua ";
+    cliente.rua = readStr();
     cin >> cliente.rua;
 
     cout << endl << "Digite seu bairro ";
+    cliente.bairro = readStr();
     cin >> cliente.bairro;
 
     cout << endl << "Digite seu estado ";
+    cliente.estado = readStr();
     cin >> cliente.estado;
 }
 
