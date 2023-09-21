@@ -1,5 +1,6 @@
 #include <iostream>
 #include "myLib_client.cpp"
+#include <string>
 
 using namespace std;
 
