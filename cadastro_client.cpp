@@ -51,5 +51,29 @@ void apagarCliente(){
 }
 
 int main(){
+    int opc = 0;
+
+    switch (opc)
+    {
+    case 1:
+        cadastrarCliente();
+        cout << "Cliente cadastrado com sucesso!" << endl;
+        break;
+
+    case 2:
+        cout << "Listando cliente ... " << endl;
+        listarCliente();
+        break;
+
+    case 3:
+        apagarCliente();
+        cout << "Cliente deletado com sucesso!" << endl;
+        break;
     
+    default:
+        cout << "Nao existe essa opcao!" << endl;
+        cout << "Digite novamente ..." << endl;
+        break;
+    }
+
 }
