@@ -1,6 +1,5 @@
 #include <iostream>
 #include "myLib_client.cpp"
-#include <string>
 
 using namespace std;
 
@@ -12,7 +11,7 @@ void cadastrarCliente(){
 
     cout << endl << "Digite seu nome ";
     cliente.nome = readStr();
-    cin >> cliente.nome;
+    //cin >> cliente.nome;
 
     cout << endl << "Digite seu CPF ";
     cin >> cliente.CPF;
@@ -25,22 +24,22 @@ void cadastrarCliente(){
 
     cout << endl << "Digite seu email ";
     cliente.email = readStr();
-    cin >> cliente.email;
+    //cin >> cliente.email;
 
     cout << endl << "Digite seu cep ";
     cin >> cliente.cep;
 
     cout << endl << "Digite sua rua ";
     cliente.rua = readStr();
-    cin >> cliente.rua;
+    //cin >> cliente.rua;
 
     cout << endl << "Digite seu bairro ";
     cliente.bairro = readStr();
-    cin >> cliente.bairro;
+    //cin >> cliente.bairro;
 
     cout << endl << "Digite seu estado ";
     cliente.estado = readStr();
-    cin >> cliente.estado;
+    //cin >> cliente.estado;
 }
 
 void listarCliente(){
@@ -62,11 +61,9 @@ void apagarCliente(){
 
     cout << "Digite o código do cliente que deseja apagar: ";
     cin >> codigoCliente;
-
     // Percorra a lista de clientes (ou o local onde você armazena os dados dos clientes)
     // e verifique se o cliente com o código fornecido existe.
     // Se encontrado, remova-o da lista.
-
     // Exemplo hipotético:
     if (!clienteEncontrado) {
         cout << "Cliente não encontrado." << endl;
@@ -74,15 +71,16 @@ void apagarCliente(){
 }
 
 int main(){
-    int opc = 1;
+    int opc = 0;
         cout << endl << "1 - Cadastrar Cliente" << endl;
         cout << "2 - Listar Cliente" << endl;
         cout << "3 - Deletar Cliente" << endl;
-    while(opc != 0){
+        cin >> opc;
+    do{
         switch (opc){
             case 1:
                 cadastrarCliente();
-                cout << "Cliente cadastrado com sucesso!" << endl;
+                //cout << "Cliente cadastrado com sucesso!" << endl;
                 break;
 
             case 2:
@@ -100,6 +98,6 @@ int main(){
                 cout << "Digite novamente ..." << endl;
                 break;
         }
-    }
+    }while(opc != 0);
 
 }
