@@ -1,11 +1,11 @@
 /* GRUPO PASTA DE AMENDOIM */
 
 /*
+    André Guedes - 52319498
     Beatriz Gerardi - 52318329
     Gustavo Fonseca - 52318250
     Gustavo Neumann Vargas - 52318827
     João Pedro - 52318776
-    Nathalia Cherelu - 52318803
     Vitor Lopes Barbato - 52318251
 */
 
