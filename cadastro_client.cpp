@@ -43,59 +43,39 @@ void cadastrarCliente(){
 }
 
 void listarCliente(){
-    cout << "Codigo: " << cliente.codigo << endl;
-    cout << "Nome Completo" <<cliente.nome << endl;
-    cout << "Cadastro de pessoas fisicas(CPF)" << cliente.CPF << endl;
-    cout << "Registro Geral(RG)" << cliente.RG << endl;
-    cout << "Telefone" << cliente.celular << endl;
-    cout << "Email" << cliente.email << endl;
-    cout << "Codigo de endereco postal" << cliente.cep << endl;
-    cout << "Endereço (rua)" << cliente.rua << endl;
-    cout << "Bairro" << cliente.bairro << endl;
-    cout << "Estado" << cliente.estado << endl;
-}
-
-void apagarCliente(){
-    int codigoCliente;
-    bool clienteEncontrado = false;
-
-    cout << "Digite o código do cliente que deseja apagar: ";
-    cin >> codigoCliente;
-    // Percorra a lista de clientes (ou o local onde você armazena os dados dos clientes)
-    // e verifique se o cliente com o código fornecido existe.
-    // Se encontrado, remova-o da lista.
-    // Exemplo hipotético:
-    if (!clienteEncontrado) {
-        cout << "Cliente não encontrado." << endl;
-    }
+    cout << endl << "Codigo: " << cliente.codigo << endl;
+    cout << endl << "Nome Completo: " <<cliente.nome << endl;
+    cout << endl << "Cadastro de pessoas fisicas(CPF): " << cliente.CPF << endl;
+    cout << endl << "Registro Geral(RG): " << cliente.RG << endl;
+    cout << endl << "Telefone: " << cliente.celular << endl;
+    cout << endl << "Email: " << cliente.email << endl;
+    cout << endl << "Codigo de endereco postal: " << cliente.cep << endl;
+    cout << endl << "Endereco (rua): " << cliente.rua << endl;
+    cout << endl << "Bairro: " << cliente.bairro << endl;
+    cout << endl << "Estado: " << cliente.estado << endl;
 }
 
 int main(){
     int opc = 0;
+    do{
         cout << endl << "1 - Cadastrar Cliente" << endl;
         cout << "2 - Listar Cliente" << endl;
-        cout << "3 - Deletar Cliente" << endl;
+        cout << "Opcao: ";
         cin >> opc;
-    do{
+        cout << endl;
         switch (opc){
             case 1:
                 cadastrarCliente();
-                //cout << "Cliente cadastrado com sucesso!" << endl;
+                cout << "Cliente cadastrado com sucesso!" << endl;
                 break;
 
             case 2:
                 cout << "Listando cliente ... " << endl;
                 listarCliente();
                 break;
-
-            case 3:
-                apagarCliente();
-                cout << "Cliente deletado com sucesso!" << endl;
-                break;
             
             default:
                 cout << "Nao existe essa opcao!" << endl;
-                cout << "Digite novamente ..." << endl;
                 break;
         }
     }while(opc != 0);
